@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <title>Alarm Clock</title>
+</head>
+<body>
+    <div class="container">
+        <h1><p>ALARM CLOCK</p></h1>
+        <h2><p>Current Date : 07-08-2026</p></h2>
+        <h4><p>Current Time :</p></h4>
+        <h2 id="clock"></h2>
+
+    
+    <form method="POST">
+        <input type="time" id="alarmTime" name="alarm_time">
+
+        <button type="button" id="setAlarm">
+            Set Alarm!
+        </button>
+    </form>
+
+    <h3 id="alarmMessage">No alarm set</h3>
+    
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
